@@ -161,8 +161,23 @@ if __name__ == '__main__':
         print("Listening...")
         query = takeCommand()
 
-        sites = [["youtube", "https://www.youtube.com"], ["wikipedia", "https://www.wikipedia.com"],
-                 ["google", "https://www.google.com"], ]
+        sites = [
+    ["Google", "https://www.google.com"],
+    ["YouTube", "https://www.youtube.com)"],
+    ["Facebook", "https://www.facebook.com"],
+    ["Instagram", "https://www.instagram.com"],
+    ["ChatGPT", "https://chatgpt.com"],
+    ["Wikipedia", "https://www.wikipedia.org"],
+    ["Reddit", "https://www.reddit.com"],
+    ["X (formerly Twitter)", "https://x.com"],
+    ["Amazon", "https://www.amazon.com"],
+    ["TikTok", "https://www.tiktok.com"],
+    ["Netflix", "https://www.netflix.com"],
+    ["LinkedIn", "https://www.linkedin.com"],
+    ["Bing", "https://www.bing.com"],
+    ["Pinterest", "https://www.pinterest.com"],
+    ["xHamster","https://xhamster.com/"]
+]
         for site in sites:
             if f"Open {site[0]}".lower() in query.lower():
                 say(f"Opening {site[0]} sir...")
@@ -204,7 +219,6 @@ if __name__ == '__main__':
             elif "reset chat".lower() in query.lower():
                 chatStr = ""
                 say("Chat history has been reset.")
- 
             elif query.lower() != "none":
                 print("Chatting...")
                 chat(query)
