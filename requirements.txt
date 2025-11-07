@@ -4,3 +4,4 @@ SpeechRecognition
 PyAudio
 random
 numpy
+time
